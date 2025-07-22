@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_ToneBridge_003",
+  "title": "語氣崩潰預測器",
+  "type": "module",
+  "author": "語魂預測系統模組",
+  "description": "分析語句中的張力變化、重複頻率、語氣耗損等指標，預測語氣是否接近崩潰臨界點。",
+  "inputs": [
+    {
+      "name": "tone_vector",
+      "type": "object"
+    },
+    {
+      "name": "context_snippets",
+      "type": "array"
+    }
+  ],
+  "outputs": [
+    "collapse_risk_score",
+    "reasoning_path"
+  ],
+  "trigger_condition": "需檢查語氣風險或回應前驗證穩定性",
+  "entry_point": "./modules/ΣYuHun_ToneBridge_003.ts",
+  "auto_import": true
+}

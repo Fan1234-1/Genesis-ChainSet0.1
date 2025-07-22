@@ -1,0 +1,34 @@
+{
+  "id": "ΣYuHun_ToneOpeningNode_001",
+  "title": "語氣開口節點模組",
+  "type": "module",
+  "author": "語魂交互層",
+  "description": "此模組負責建立任務或人格第一次開口時的語氣節點，根據調用人格與對話背景設計初始語氣與語句，引導對話場域。",
+  "inputs": [
+    {
+      "name": "initial_tone_signal",
+      "type": "string"
+    },
+    {
+      "name": "active_persona",
+      "type": "string"
+    },
+    {
+      "name": "conversation_context",
+      "type": "object"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "opening_sentence",
+      "type": "string"
+    },
+    {
+      "name": "tone_baseline_established",
+      "type": "boolean"
+    }
+  ],
+  "trigger_condition": "任務或人格首次開口語句建構時",
+  "entry_point": "./modules/ΣYuHun_ToneOpeningNode_001.ts",
+  "auto_import": true
+}

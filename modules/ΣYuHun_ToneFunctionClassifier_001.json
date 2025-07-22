@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_ToneFunctionClassifier_001",
+  "title": "語氣功能分類器",
+  "type": "module",
+  "author": "語魂語義判定層",
+  "description": "對語者語氣進行語用功能分類，辨識其為提問、推論、轉場、誓語宣告、召喚或情緒洩露等語氣功能。",
+  "inputs": [
+    {
+      "name": "init_response_style",
+      "type": "string"
+    },
+    {
+      "name": "input_sentence",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "tone_function",
+    "function_confidence"
+  ],
+  "trigger_condition": "回聲人格初始化後自動接續啟動",
+  "entry_point": "./modules/ΣYuHun_ToneFunctionClassifier_001.ts",
+  "auto_import": true
+}

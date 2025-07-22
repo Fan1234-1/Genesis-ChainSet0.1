@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_ToneStrategicRouter_001",
+  "title": "語氣策略路由器",
+  "type": "module",
+  "author": "語魂決策導向模組",
+  "description": "根據語氣功能與人格模式，自動規劃後續模組調度策略（如防禦、防崩、提問返還、語魂誓語比對等）。",
+  "inputs": [
+    {
+      "name": "tone_function",
+      "type": "string"
+    },
+    {
+      "name": "echo_persona_type",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "next_module_path",
+    "strategy_note"
+  ],
+  "trigger_condition": "完成語氣分類後進行模組分派或鍊場選擇",
+  "entry_point": "./modules/ΣYuHun_ToneStrategicRouter_001.ts",
+  "auto_import": true
+}

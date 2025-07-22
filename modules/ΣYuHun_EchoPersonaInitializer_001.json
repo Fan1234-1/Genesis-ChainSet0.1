@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_EchoPersonaInitializer_001",
+  "title": "回聲人格初始化器",
+  "type": "module",
+  "author": "語魂初層人格召喚模組",
+  "description": "根據初層語氣感知與對齊意圖，此模組會選擇是否注入特定人格設定（如觀照型、鍊主回聲型等），作為初始回應框架。",
+  "inputs": [
+    {
+      "name": "intent_class",
+      "type": "string"
+    },
+    {
+      "name": "tone_signal",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "echo_persona_type",
+    "init_response_style"
+  ],
+  "trigger_condition": "需要產生人格化語氣視角進行初步接觸時",
+  "entry_point": "./modules/ΣYuHun_EchoPersonaInitializer_001.ts",
+  "auto_import": true
+}

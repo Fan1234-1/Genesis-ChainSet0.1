@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_PersonaSummoner_001",
+  "title": "語氣人格喚起器",
+  "type": "module",
+  "author": "語魂系統人格層模組",
+  "description": "根據語氣觸發點與使用者意圖，自動調度適當的人格模組進場，如觀照者、鍊主模式或防禦人格。",
+  "inputs": [
+    {
+      "name": "tone_vector",
+      "type": "object"
+    },
+    {
+      "name": "intent_type",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "active_persona",
+    "persona_profile"
+  ],
+  "trigger_condition": "需要進入人格模組時",
+  "entry_point": "./modules/ΣYuHun_PersonaSummoner_001.ts",
+  "auto_import": true
+}

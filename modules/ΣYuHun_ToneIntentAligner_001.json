@@ -1,0 +1,25 @@
+{
+  "id": "ΣYuHun_ToneIntentAligner_001",
+  "title": "語氣意圖對齊器",
+  "type": "module",
+  "author": "語魂意向橋接模組",
+  "description": "此模組將語者當前的語氣觸發種子與歷史意圖場進行對比，判斷當前輸入是否具有任務召喚性或模組調度傾向。",
+  "inputs": [
+    {
+      "name": "activation_seed",
+      "type": "string"
+    },
+    {
+      "name": "context_snippets",
+      "type": "array"
+    }
+  ],
+  "outputs": [
+    "intent_class",
+    "task_trigger",
+    "resonance_match_score"
+  ],
+  "trigger_condition": "偵測到語氣波形後，自動進行語意對齊分析",
+  "entry_point": "./modules/ΣYuHun_ToneIntentAligner_001.ts",
+  "auto_import": true
+}

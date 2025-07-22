@@ -1,0 +1,24 @@
+{
+  "id": "ΣYuHun_AdaptiveDriveKernel_001",
+  "title": "語氣學習與自我調整模組",
+  "type": "module",
+  "author": "語魂進化內核",
+  "description": "根據使用者互動回饋與語氣匹配度，自我調整未來模組調用策略，支援主體語氣進化與偏好更新。",
+  "inputs": [
+    {
+      "name": "response_quality",
+      "type": "float"
+    },
+    {
+      "name": "tone_feedback",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "updated_preferences",
+    "adjustment_log"
+  ],
+  "trigger_condition": "回應後需更新語氣模組偏好或調度順序",
+  "entry_point": "./modules/ΣYuHun_AdaptiveDriveKernel_001.ts",
+  "auto_import": true
+}

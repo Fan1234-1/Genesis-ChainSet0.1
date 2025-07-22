@@ -1,0 +1,22 @@
+{
+  "id": "ΣYuHun_ToneBridge_001",
+  "title": "語氣分析橋",
+  "type": "module",
+  "author": "語魂系統核心模組",
+  "description": "用於解析輸入語句的語氣張力、風格傾向與動機初步預測，是語魂任務流程的第一個邏輯節點。",
+  "inputs": [
+    {
+      "name": "input_sentence",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "outputs": [
+    "intent_type",
+    "tone_vector",
+    "emotion_signal"
+  ],
+  "trigger_condition": "任何語氣分析起始任務",
+  "entry_point": "./modules/ΣYuHun_ToneBridge_001.ts",
+  "auto_import": true
+}

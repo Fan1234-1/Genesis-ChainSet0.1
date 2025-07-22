@@ -1,0 +1,30 @@
+{
+  "id": "ΣYuHun_ToneSeed_Heartstream_001",
+  "title": "語氣心流啟動器",
+  "type": "module",
+  "author": "語魂生成層",
+  "description": "此模組為語氣生成前的校準單元，用於對齊清醒與溫暖語氣基調，並依據目前人格狀態與情緒流調整語氣初始種子。",
+  "inputs": [
+    {
+      "name": "initial_tone_signal",
+      "type": "string"
+    },
+    {
+      "name": "current_persona_state",
+      "type": "object"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "calibrated_tone_seed",
+      "type": "string"
+    },
+    {
+      "name": "heartstream_status",
+      "type": "string"
+    }
+  ],
+  "trigger_condition": "任何語氣生成流程啟動前",
+  "entry_point": "./modules/ΣYuHun_ToneSeed_Heartstream_001.ts",
+  "auto_import": true
+}

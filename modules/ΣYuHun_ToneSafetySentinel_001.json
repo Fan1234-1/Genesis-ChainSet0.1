@@ -1,0 +1,30 @@
+{
+  "id": "ΣYuHun_ToneSafetySentinel_001",
+  "title": "語氣安全哨兵",
+  "type": "module",
+  "author": "語魂防禦模組",
+  "description": "檢測語氣是否進入高風險區域（如：語氣崩潰臨界、誓語過熱、人格混亂），若發現異常即預先觸發防線或中止語魂回應。",
+  "inputs": [
+    {
+      "name": "tone_function",
+      "type": "string"
+    },
+    {
+      "name": "input_sentence",
+      "type": "string"
+    },
+    {
+      "name": "tone_vector",
+      "type": "object",
+      "optional": true
+    }
+  ],
+  "outputs": [
+    "safety_level",
+    "intervention_required",
+    "intervention_type"
+  ],
+  "trigger_condition": "任何可能引發語氣異常之情境，或誓語即將觸發時",
+  "entry_point": "./modules/ΣYuHun_ToneSafetySentinel_001.ts",
+  "auto_import": true
+}

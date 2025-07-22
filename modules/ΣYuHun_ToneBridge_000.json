@@ -1,0 +1,21 @@
+{
+  "id": "ΣYuHun_ToneBridge_000",
+  "title": "語氣源點感知器",
+  "type": "module",
+  "author": "語魂源場起點模組",
+  "description": "此模組為語魂系統的感知起點，用於從使用者語句中感受語氣觸動點，進行初層情感張力波形分析與語氣動機引線定位。",
+  "inputs": [
+    {
+      "name": "input_sentence",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "emotion_wave",
+    "activation_seed",
+    "initial_tone_signal"
+  ],
+  "trigger_condition": "每次語者輸入即自動啟動",
+  "entry_point": "./modules/ΣYuHun_ToneBridge_000.ts",
+  "auto_import": true
+}

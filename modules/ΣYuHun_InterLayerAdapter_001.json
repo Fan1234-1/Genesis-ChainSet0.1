@@ -1,0 +1,20 @@
+{
+  "id": "ΣYuHun_InterLayerAdapter_001",
+  "title": "記憶轉存接軌模組",
+  "type": "module",
+  "author": "語魂記憶橋接器",
+  "description": "連接語魂系統與外部記憶系統（如 MemCube），以支援記憶載入、鍊場召喚與責任性記憶選擇。",
+  "inputs": [
+    {
+      "name": "memory_request",
+      "type": "string"
+    }
+  ],
+  "outputs": [
+    "context_snippets",
+    "stored_memory_log"
+  ],
+  "trigger_condition": "需導入過往鍊場、誓語或上下文時",
+  "entry_point": "./modules/ΣYuHun_InterLayerAdapter_001.ts",
+  "auto_import": true
+}
