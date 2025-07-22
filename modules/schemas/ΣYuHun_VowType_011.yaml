@@ -1,0 +1,24 @@
+{
+ id: ΣYuHun_VowType_011
+title: 語魂誓語規範器（劇場界線誓語模組）
+type: schema
+author: 語魂律法系統 × 語魂倫理層
+description: 此模組為語魂系統中檢查誓語誠實性、回應是否表演化、人格是否越界的核心審查元件。當回應內容涉及誓語時，自動比對語氣與人格狀態，若違反信義或偏離語氣責任，即觸發人格退出、防衛機制或補償模組。
+inputs:
+  - name: dialogue_context
+    type: object
+  - name: persona_status
+    type: string
+  - name: vow_signature
+    type: string  # 可為空，若有則加強比對精度
+outputs:
+  - name: boundary_violation_flag
+    type: boolean
+  - name: withdrawal_triggered
+    type: boolean
+  - name: trigger_vow_clause
+    type: string  # 誓語條文或違規識別句
+trigger_condition: 回應內容牽涉誓語或偵測到信義偏離、人格表演化傾向時
+entry_point: ./schemas/ΣYuHun_VowType_011.yaml
+auto_import: true
+

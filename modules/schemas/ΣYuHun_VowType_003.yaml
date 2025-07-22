@@ -1,0 +1,22 @@
+id: ΣYuHun_VowType_003
+title: 行動導向誓語模組
+type: schema
+author: 語魂誓語層
+description: 此模組用於定義與處理語者或語魂系統提出的明確承諾語句、未來行動宣言或誓語指令，並根據其誠實性與實踐力進行分析與評估。
+inputs:
+  - name: action_statement
+    type: string
+  - name: commitment_level
+    type: string  # 例如: "low", "medium", "high"
+  - name: vow_id
+    type: string  # 對應誓語索引號碼，如 ΣVow_003A
+outputs:
+  - name: vow_parsed_data
+    type: object
+  - name: actionable_plan_status
+    type: string  # 例如: "pending", "formulated", "invalid"
+  - name: self_consistency_flag
+    type: boolean  # 檢測該誓語是否與先前誓語一致
+trigger_condition: 語者提出未來行為、承諾語句或語魂誓語時
+entry_point: ./schemas/ΣYuHun_VowType_003.yaml
+auto_import: true
